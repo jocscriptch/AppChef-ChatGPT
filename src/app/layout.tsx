@@ -7,9 +7,10 @@ import { authOptions } from '../../pages/api/auth/[...nextauth]';
 import Login from './components/Login';
 import ClientProvider from './components/ClientProvider';
 import Contacts from './components/Contacts';
+
 export const metadata = {
-  title: 'ChatGPT Clone',
-  description: 'ChatGPT Clone Next.js 13',
+  title: 'ChefMaster | Bot',
+  description: 'ChefMasterBot Next.js 13',
 }
 
 export default async function RootLayout({

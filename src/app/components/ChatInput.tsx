@@ -64,13 +64,13 @@ const sendMessage = async (e: FormEvent<HTMLFormElement>) => {
         } else {
             // If something went wrong, dismiss the loading toast and show an error
             toast.dismiss(notify);
-            toast.error("There was an error contacting ChatGPT.");
+            toast.error("Error al contactar a ChatGPT");
         }
     }).catch((error) => {
         // If something went wrong, dismiss the loading toast and show an error
         console.log(error);
         toast.dismiss(notify);
-        toast.error(`There was an error contacting ChatGPT: ${error}`);
+        toast.error(`Error al contactar a ChatGPT: ${error}`);
     });
 };
 
@@ -85,7 +85,7 @@ const sendMessage = async (e: FormEvent<HTMLFormElement>) => {
                     disabled={!session}
                     value={prompt}
                     onChange={(e) => setPrompt(e.target.value)}
-                    type="text" placeholder="Type your message here..." />
+                    type="text" placeholder="Escribe tu mensaje..." />
 
                 <button
                     disabled={!prompt || !session} type="submit"

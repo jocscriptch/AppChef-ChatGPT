@@ -16,7 +16,7 @@ export default function Contacts() {
               target="_black"
             >
               <Image
-                src="chatgpt-icon.svg"
+                src="/chatgpt-icon.svg"
                 className="h-8 mr-3"
                 width={59}
                 height={50}

@@ -1,22 +1,24 @@
 'use client'
-import {signIn} from "next-auth/react";
+import { signIn } from "next-auth/react";
 import Image from "next/image";
+import IconCodechef from "./icons/IconCodeChef";
 
-function Login(){
-    return(
-        <div className="bg-[#11A37F] h-screen flex flex-col items-center
+function Login() {
+    return (
+        <div className="bg-[#202123]  min-h-screen flex flex-col items-center
          justify-center text-center">
-            <Image
-                src="https://links.papareact.com/2i6"
-                width={300}
-                height={300}
-                alt="logo"
-            />
+            <div className="pb-5">
+                <IconCodechef
+                    width={300}
+                    height={300}
+                    className="text-white" />
+            </div>
             <button
-             onClick={() => signIn("google")}
-             className="text-white font-bold text-3xl animate-pulse">
-                Sign In to use ChatGPT
-             </button>
+                onClick={() => signIn("google")}
+                className="text-white font-bold text-3xl animate-pulse border-white border-2 rounded-md p-2">
+                Inicia Sesión <br />
+                con ChefMasterBot
+            </button>
         </div>
     )
 }
