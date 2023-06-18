@@ -1,3 +1,4 @@
+'use client'
 import Link from "next/link";
 import { ChatBubbleLeftIcon, TrashIcon } from "@heroicons/react/24/outline";
 import { usePathname, useRouter } from "next/navigation";

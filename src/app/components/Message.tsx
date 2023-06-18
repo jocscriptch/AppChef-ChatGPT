@@ -1,3 +1,4 @@
+'use client'
 import { DocumentData } from "firebase/firestore"
 import Image from "next/image";
 

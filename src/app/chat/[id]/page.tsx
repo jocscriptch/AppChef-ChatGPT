@@ -1,3 +1,4 @@
+'use client'
 import Chat from "@/app/components/Chat";
 import ChatInput from "@/app/components/ChatInput";
 

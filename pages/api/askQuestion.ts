@@ -1,3 +1,4 @@
+'use client'
 import type { NextApiRequest, NextApiResponse } from "next";
 import query from "../../lib/queryApi";
 import admin from "firebase-admin";
