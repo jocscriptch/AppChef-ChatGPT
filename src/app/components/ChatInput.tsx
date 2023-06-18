@@ -42,7 +42,7 @@ const sendMessage = async (e: FormEvent<HTMLFormElement>) => {
     );
 
     //Notification to say Loading ChatGPT
-    const notify = toast.loading("ChatGPT is thinking...");
+    const notify = toast.loading("ChefMasterBot pensando...");
 
     await fetch("/api/askQuestion", {
         method: "POST",
@@ -58,7 +58,7 @@ const sendMessage = async (e: FormEvent<HTMLFormElement>) => {
     }).then((response) => {
         if (response.ok) {
             //ToastNotification to say success
-            toast.success("ChatGPT has responded!", {
+            toast.success("ChefMasterBot respondio", {
                 id: notify,
             });
         } else {

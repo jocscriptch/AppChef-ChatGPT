@@ -21,11 +21,25 @@ export default function SideBar() {
     );
 
     return (
-        <div className="p-2 flex flex-col h-screen">
+        <div className="p-2 flex flex-col h-screen max-h-screen">
             <div className="flex-1">
                 <div>
-                    {/*New Chat*/}
-                    <NewChat />
+                    <div>
+                        {session && (
+                            <div className="flex-grow-0 pr-2 py-1">
+
+                                <Image
+                                    onClick={() => signOut()}
+                                    src={session.user?.image!} width={50} height={50}
+                                    alt="Profile pic"
+                                    className="h-12 w-12 rounded-full cursor-pointer mx-auto mb-2
+                                     hover:opacity-50"
+                                />
+                            </div>
+                        )}
+                        {/*New Chat*/}
+                        <NewChat />
+                    </div>
                     <div>
                         {/*ModelSection*/}
                     </div>
@@ -37,15 +51,6 @@ export default function SideBar() {
                 </div>
             </div>
 
-            {session && (
-                <Image
-                    onClick={() => signOut()}
-                    src={session.user?.image!} width={50} height={50}
-                    alt="Profile pic"
-                    className="h-12 w-12 rounded-full cursor-pointer mx-auto mb-2
-                    hover:opacity-50"
-                />
-            )}
         </div>
     );
 }

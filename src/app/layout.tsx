@@ -6,7 +6,7 @@ import { getServerSession } from "next-auth";
 import { authOptions } from '../../pages/api/auth/[...nextauth]';
 import Login from './components/Login';
 import ClientProvider from './components/ClientProvider';
-
+import Contacts from './components/Contacts';
 export const metadata = {
   title: 'ChatGPT Clone',
   description: 'ChatGPT Clone Next.js 13',
@@ -27,7 +27,7 @@ export default async function RootLayout({
             <Login />
           ) : (
             <div className="flex">
-              <div className="bg-[#202123] max-w-xs h-screen overflow-y-auto md:min-w-[20rem]">
+              <div className="bg-[#202123] max-w-xs min-h-screen overflow-y-auto md:min-w-[20rem]">
                 {/*Sidebar*/}
                 <SideBar />
               </div>
@@ -38,6 +38,7 @@ export default async function RootLayout({
             </div>
           )}
         </SessionProvider>
+        <Contacts/>
       </body>
     </html>
   )
