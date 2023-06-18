@@ -19,7 +19,7 @@ export default function Navbar() {
             xmlns="http://www.w3.org/2000/svg"
             height="2em"
             viewBox="0 0 640 512"
-            fill="#75ab9d"
+            fill="#FA4224"
             className="mx-2"
           >
             {" "}
@@ -37,7 +37,7 @@ export default function Navbar() {
         <svg
           fill="#75AB9D"
           xmlns="http://www.w3.org/2000/svg"
-          height="1em"
+          height="2em"
           viewBox="0 0 448 512"
         >
           {" "}
@@ -58,8 +58,8 @@ export default function Navbar() {
             <button className="flex justify-center items-center mr-4">
               <IconRobot
                 className="mx-2 text-green-400"
-                width={20}
-                height={20}
+                width={25}
+                height={25}
               />
               <Link className="text-left py-1" href="#Application">
                 Aplicación
@@ -68,8 +68,8 @@ export default function Navbar() {
             <button className="flex justify-center items-center">
               <IconContactsOutline
                 className="mx-2 text-cyan-300"
-                width={20}
-                height={20}
+                width={25}
+                height={25}
               />
               <Link className="text-left py-1" href="#Contacts">
                 Contactos
