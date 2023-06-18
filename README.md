@@ -22,6 +22,12 @@
 
 ## Run Locally
 
+Link Vercel
+
+```bash
+  https://app-chef-chat-gpt.vercel.app
+```
+
 Clone the project
 
 ```bash
